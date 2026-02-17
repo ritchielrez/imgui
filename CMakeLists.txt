@@ -11,5 +11,6 @@ add_library(imgui_impl_sdlrenderer3 STATIC
     backends/imgui_impl_sdl3.cpp
     backends/imgui_impl_sdlrenderer3.cpp
 )
+target_include_directories(imgui_impl_sdlrenderer3 PRIVATE <path-to-sdl-include-dir>)
 target_include_directories(imgui_impl_sdlrenderer3 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_include_directories(imgui_impl_sdlrenderer3 PUBLIC backends/)
